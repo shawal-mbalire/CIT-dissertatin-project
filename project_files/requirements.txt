@@ -1,0 +1,6 @@
+web3
+json
+flask
+flask_login
+hyperledger
+flask_sqlalchemy

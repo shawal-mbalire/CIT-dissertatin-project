@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Doctor Dashboard</title>
+</head>
+
+<body>
+  <h1>Doctor Dashboard</h1>
+  <p>Welcome, {{ current_user.username }}!</p>
+  <a href="{{ url_for('logout') }}">Log Out</a>
+  <h2>Patients</h2>
+  <ul>
+    <li><a href="{{ url_for('patients') }}">View Patient List</a></li>
+  </ul>
+</body>
+
+</html>

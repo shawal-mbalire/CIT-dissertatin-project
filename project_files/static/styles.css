@@ -1,0 +1,134 @@
+/* General styles */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    color: #333;
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+
+  a {
+    color: #0083ff;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  /* Rounded corners */
+  * {
+    border-radius: 4px;
+  }
+
+  /* Header styles */
+  header {
+    height: 60px;
+    background-color: #0083ff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+
+  header h1 {
+    color: white;
+    margin: 0;
+  }
+
+  header a {
+    color: white;
+    text-decoration: none;
+  }
+
+  /* Form styles */
+  form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: white;
+  }
+
+  form label {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+
+  form input, form textarea, form select {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+  }
+
+  form textarea {
+    height: 200px;
+    resize: none;
+  }
+
+  form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #0083ff;
+    color: white;
+    border: none;
+  }
+
+  form button:hover {
+    background-color: #0071e6;
+  }
+
+  /* Table styles */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  table thead tr {
+    background-color: #0083ff;
+    color: white;
+  }
+
+  table th, table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+
+  /* Dashboard styles */
+  .dashboard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 60px);
+  }
+
+  .dashboard h2 {
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+  .dashboard p {
+    color: #555;
+  }
+
+  .dashboard ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .dashboard li {
+    padding: 10px 0;
+  }
