@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block title %}Patients{% endblock %}
+
+
+{% block content %}
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Gender</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for patient in patients %}
+    <tr>
+      <td>{{ patient.name }}</td>
+      <td>{{ patient.age }}</td>
+      <td>{{ patient.gender }}</td>
+      <td>
+        <a href="/patient/{{ patient.id }}">View</a>
+        <a href="/patient/{{ patient.id }}/edit">Edit</a>
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+
+
+
+{% endblock %}

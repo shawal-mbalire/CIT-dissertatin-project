@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Patients Dashboard{% endblock %}
+
+
+{% block content %}
+
+<div class="dashboard">
+    <h2>Patients Dashboard</h2>
+    <p>Welcome, {{ current_user.username }}</p>
+    <ul>
+        <li><a href="/patients">View patients</a></li>
+    </ul>
+</div>
+
+{% endblock %}
